@@ -4,7 +4,10 @@
 \alias{df_cc_games}
 \alias{df_american_checkers}
 \alias{df_breakthrough}
+\alias{df_crossings}
+\alias{df_focus}
 \alias{df_four_field_kono}
+\alias{df_lines_of_action}
 \alias{df_turkish_draughts}
 \title{Data frames of starting diagrams for various games}
 \usage{
@@ -12,7 +15,13 @@ df_american_checkers(cell_width = 1)
 
 df_breakthrough(cell_width = 1)
 
+df_crossings(cell_width = 1)
+
+df_focus(cell_width = 1)
+
 df_four_field_kono(cell_width = 1)
+
+df_lines_of_action(cell_width = 1)
 
 df_turkish_draughts(cell_width = 1)
 }
@@ -31,8 +40,14 @@ Here is some more information about the various games:
  \item{(American) Checkers}{A traditional board game also known as \dQuote{(English) Draughts}.
                  First adapted to the piecepack by Mark A. Biggar.
                  See \url{http://www.ludism.org/ppwiki/Checkers}.}
+ \item{Crossings}{An abstract invented by Robert Abbot.
+                  See \url{https://en.wikipedia.org/wiki/Crossings_(game)}}
+ \item{Focus}{An asbtract designed by Sid Sackson.
+              See \url{https://en.wikipedia.org/wiki/Focus_(board_game)}.}
  \item{Four Field Kono}{Traditional 2-player Korean abstract adapted to piecepack by Michael Schoessow.
                         See \url{http://www.ludism.org/ppwiki/FourFieldKono}.}
+ \item{Lines of Action}{An abstract designed by Claude Soucie.
+                        See \url{https://en.wikipedia.org/wiki/Lines_of_Action}.}
  \item{Turkish Draughts}{AKA \dQuote{Dama} is a traditional checkers variant played in the Mediterranean.
                          See \url{https://en.wikipedia.org/wiki/Turkish_draughts}.}
 }

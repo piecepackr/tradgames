@@ -10,8 +10,14 @@
 #'  \item{(American) Checkers}{A traditional board game also known as \dQuote{(English) Draughts}.
 #'                  First adapted to the piecepack by Mark A. Biggar.
 #'                  See \url{http://www.ludism.org/ppwiki/Checkers}.}
+#'  \item{Crossings}{An abstract invented by Robert Abbot.
+#'                   See \url{https://en.wikipedia.org/wiki/Crossings_(game)}}
+#'  \item{Focus}{An asbtract designed by Sid Sackson.
+#'               See \url{https://en.wikipedia.org/wiki/Focus_(board_game)}.}
 #'  \item{Four Field Kono}{Traditional 2-player Korean abstract adapted to piecepack by Michael Schoessow.
 #'                         See \url{http://www.ludism.org/ppwiki/FourFieldKono}.}
+#'  \item{Lines of Action}{An abstract designed by Claude Soucie.
+#'                         See \url{https://en.wikipedia.org/wiki/Lines_of_Action}.}
 #'  \item{Turkish Draughts}{AKA \dQuote{Dama} is a traditional checkers variant played in the Mediterranean.
 #'                          See \url{https://en.wikipedia.org/wiki/Turkish_draughts}.}
 #'}
@@ -60,6 +66,25 @@ df_breakthrough <- function(cell_width = 1) {
 
 #' @rdname df_cc_games
 #' @export
+df_crossings <- df_breakthrough
+
+#' @rdname df_cc_games
+#' @export
+df_focus <- function(cell_width = 1) {
+    df_board <- tibble(piece_side = "board_face", suit = 3, rank = 8,
+                   x = 4.5, y = 4.5)
+    df_w <- tibble(piece_side = "bit_face", suit = 6, rank = 1,
+                   x = rep(c(2:7), each=3),
+                   y = c(rep(c(2, 4, 6), 2), rep(c(3, 5, 7), 2), rep(c(2, 4, 6), 2)))
+    df_b <- tibble(piece_side = "bit_face", suit = 1, rank = 1,
+                   x = rep(c(2:7), each=3),
+                   y = c(rep(c(3, 5, 7), 2), rep(c(2, 4, 6), 2), rep(c(3, 5, 7), 2)))
+    bind_rows(df_board, df_w, df_b) %>%
+        adjust_pieces(cell_width, "checkers")
+}
+
+#' @rdname df_cc_games
+#' @export
 df_four_field_kono <- function(cell_width = 1) {
     df_board <- tibble(piece_side = "board_back", suit = 2, rank = 4,
                    x = 2.5, y = 2.5)
@@ -67,6 +92,19 @@ df_four_field_kono <- function(cell_width = 1) {
                    x = rep(1:4, 2), y = rep(1:2, each = 4))
     df_b <- tibble(piece_side = "bit_face", suit = 1, rank = 1,
                    x = rep(1:4, 2), y = rep(3:4, each = 4))
+    bind_rows(df_board, df_w, df_b) %>%
+        adjust_pieces(cell_width, "checkers")
+}
+
+#' @rdname df_cc_games
+#' @export
+df_lines_of_action <- function(cell_width = 1) {
+    df_board <- tibble(piece_side = "board_face", suit = 3, rank = 8,
+                   x = 4.5, y = 4.5)
+    df_w <- tibble(piece_side = "bit_face", suit = 6, rank = 1,
+                   x = rep(c(1, 8), each=6), y = rep(2:7, 2))
+    df_b <- tibble(piece_side = "bit_face", suit = 1, rank = 1,
+                   x = rep(2:7, 2), y = rep(c(1, 8), each = 6))
     bind_rows(df_board, df_w, df_b) %>%
         adjust_pieces(cell_width, "checkers")
 }
