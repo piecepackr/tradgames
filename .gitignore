@@ -1,0 +1,13 @@
+.rake_tasks~
+README.html
+README.md
+*.swp
+*by-sa*
+*.rda
+collections
+pdf
+previews
+svg
+tmp
+TODO.rst
+bookmarks.txt

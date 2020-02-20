@@ -1,0 +1,4 @@
+destination: "/home/trevorld/a/projects/websites/R/ccgames/"
+url: "https://trevorldavis.com/R/ccgames"
+development:
+    mode: auto
