@@ -13,11 +13,9 @@ LazyLoad: yes
 Imports:
     dplyr,
     piecepackr (>= 1.3.0-18),
-    ppgames (>= 0.4.0),
     rlang,
     tibble
 Suggests:
     testthat,
     vdiffr
-SystemRequirements: pandoc, xelatex
 RoxygenNote: 7.0.2
