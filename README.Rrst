@@ -38,7 +38,8 @@ To install the ``ccgames`` R package use the following commands in R_:
 .. code:: r
 
    install.packages("remotes")
-   remotes::install_github("piecepackr/piecepackr")
+   remotes::install_github("piecepackr/piecepackr") # recommended
+   remotes::install_github("piecepackr/ppgames") # recommended
    remotes::install_github("piecepackr/ccgames")
 
 License
@@ -49,7 +50,7 @@ Unless otherwise specified everything in this repo is licensed under the `CC BY-
 Starting Boards
 ---------------
 
-This package comes with a few functions that return tibbles representing the starting board arrangement for games played with traditional board game components.
+This package comes with a few functions that return tibbles representing the starting board arrangement for games played with traditional board game components.  These can be visualized with ``piecepackr::pmap_piece`` or ``ppgames::cat_piece``.
 
 .. {r breakthrough, fig.width=9, fig.height=9, fig.cap='Starting position for Dan Troyka\'s abstract game "Breakthrough"'}
 library("ccgames")
@@ -59,4 +60,9 @@ pmap_piece(df_breakthrough(), envir=game_systems(), default.units="in", trans=op
 
 .. {r turkish_draughts, fig.width=9, fig.height=9, fig.cap='Starting position for Turkish Draughts'}
 pmap_piece(df_turkish_draughts(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
+.. ..
+
+.. {r four_field_kono}
+library("ppgames")
+cat_piece(df_four_field_kono())
 .. ..

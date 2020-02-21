@@ -19,5 +19,6 @@ after_success:
     - Rscript -e 'lintr::lint_package()'
 r_github_packages:
   - piecepackr/piecepackr
+  - piecepackr/ppgames
   - jimhester/lintr
   - r-lib/covr
