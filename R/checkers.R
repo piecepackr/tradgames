@@ -8,14 +8,13 @@
 #'                      that won the 2001 8x8 Game Design Competition.
 #'                      See \url{https://en.wikipedia.org/wiki/Breakthrough_(board_game)}.}
 #'  \item{(American) Checkers}{A traditional board game also known as \dQuote{(English) Draughts}.
-#'                  First adapted to the piecepack by Mark A. Biggar.
-#'                  See \url{http://www.ludism.org/ppwiki/Checkers}.}
+#'                  See \url{https://en.wikipedia.org/wiki/Draughts}.}
 #'  \item{Crossings}{An abstract invented by Robert Abbot.
 #'                   See \url{https://en.wikipedia.org/wiki/Crossings_(game)}}
 #'  \item{Focus}{An asbtract designed by Sid Sackson.
 #'               See \url{https://en.wikipedia.org/wiki/Focus_(board_game)}.}
-#'  \item{Four Field Kono}{Traditional 2-player Korean abstract adapted to piecepack by Michael Schoessow.
-#'                         See \url{http://www.ludism.org/ppwiki/FourFieldKono}.}
+#'  \item{Four Field Kono}{Traditional 2-player Korean abstract.
+#'                         See \url{https://en.wikipedia.org/wiki/Four_Field_Kono}.}
 #'  \item{Lines of Action}{An abstract designed by Claude Soucie.
 #'                         See \url{https://en.wikipedia.org/wiki/Lines_of_Action}.}
 #'  \item{Turkish Draughts}{AKA \dQuote{Dama} is a traditional checkers variant played in the Mediterranean.
