@@ -1,5 +1,5 @@
-ccgames 0.1.0
-=============
+tradgames 0.1.0
+===============
 
 * Game start arrangement functions:
     - `df_american_checkers` 

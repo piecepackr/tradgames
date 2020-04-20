@@ -1,4 +1,4 @@
 library(testthat)
-library(ccgames)
+library(tradgames)
 
-test_check("ccgames")
+test_check("tradgames")

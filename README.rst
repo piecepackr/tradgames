@@ -1,16 +1,16 @@
-ccgames: Board game graphics for traditional game systems
-=========================================================
+tradgames: Board game graphics for traditional game systems
+============================================================
 
-.. image:: https://travis-ci.org/piecepackr/ccgames.png?branch=master
-    :target: https://travis-ci.org/piecepackr/ccgames
+.. image:: https://travis-ci.org/piecepackr/tradgames.png?branch=master
+    :target: https://travis-ci.org/piecepackr/tradgames
     :alt: Build Status
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/piecepackr/ccgames?branch=master&svg=true 
-    :target: https://ci.appveyor.com/project/piecepackr/ccgames
+.. image:: https://ci.appveyor.com/api/projects/status/github/piecepackr/tradgames?branch=master&svg=true 
+    :target: https://ci.appveyor.com/project/piecepackr/tradgames
     :alt: AppVeyor Build Status
 
-.. image:: https://img.shields.io/codecov/c/github/piecepackr/ccgames/master.svg
-    :target: https://codecov.io/github/piecepackr/ccgames?branch=master
+.. image:: https://img.shields.io/codecov/c/github/piecepackr/tradgames/master.svg
+    :target: https://codecov.io/github/piecepackr/tradgames?branch=master
     :alt: Coverage Status
 
 .. image:: http://www.repostatus.org/badges/latest/wip.svg
@@ -22,7 +22,7 @@ ccgames: Board game graphics for traditional game systems
 .. _piecepackr: https://github.com/piecepackr/piecepackr
 .. _R: https://www.r-project.org/
 
-``ccgames`` is an R_ package with functions that help generate board game graphics for games played with traditional board game components.  Right now it has a few functions that return the setups for some games that can be drawn with piecepackr_'s ``pmap_piece`` function.
+``tradgames`` is an R_ package with functions that help generate board game graphics for games played with traditional board game components.  Right now it has a few functions that return the setups for some games that can be drawn with piecepackr_'s ``pmap_piece`` function.
 
 .. contents::
 
@@ -31,13 +31,14 @@ ccgames: Board game graphics for traditional game systems
 Installation
 ------------
 
-To install the ``ccgames`` R package use the following commands in R_:
+To install the ``tradgames`` R package use the following commands in R_:
 
 .. code:: r
 
    install.packages("remotes")
-   remotes::install_github("piecepackr/piecepackr")
-   remotes::install_github("piecepackr/ccgames")
+   remotes::install_github("piecepackr/piecepackr") # recommended
+   remotes::install_github("piecepackr/ppgames") # recommended
+   remotes::install_github("piecepackr/tradgames")
 
 License
 -------
@@ -47,20 +48,32 @@ Unless otherwise specified everything in this repo is licensed under the `CC BY-
 Starting Boards
 ---------------
 
-This package comes with a few functions that return tibbles representing the starting board arrangement for games played with traditional board game components.
+This package comes with a few functions that return tibbles representing the starting board arrangement for games played with traditional board game components.  These can be visualized with ``piecepackr::pmap_piece`` or ``ppgames::cat_piece``.
 
 
 .. sourcecode:: r
     
 
-    library("ccgames")
+    library("tradgames")
+
+
+::
+
+    ## Error in library("tradgames"): there is no package called 'tradgames'
+
+
+.. sourcecode:: r
+    
+
     library("piecepackr")
     pmap_piece(df_breakthrough(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
 
-.. figure:: man/figures/README-breakthrough-1.png
-    :alt: Starting position for Dan Troyka's abstract game "Breakthrough"
 
-    Starting position for Dan Troyka's abstract game "Breakthrough"
+::
+
+    ## Error in df_breakthrough(): could not find function "df_breakthrough"
+
+
 
 
 .. sourcecode:: r
@@ -68,7 +81,22 @@ This package comes with a few functions that return tibbles representing the sta
 
     pmap_piece(df_turkish_draughts(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
 
-.. figure:: man/figures/README-turkish_draughts-1.png
-    :alt: Starting position for Turkish Draughts
 
-    Starting position for Turkish Draughts
+::
+
+    ## Error in df_turkish_draughts(): could not find function "df_turkish_draughts"
+
+
+
+
+.. sourcecode:: r
+    
+
+    ppgames::cat_piece(df_four_field_kono())
+
+
+::
+
+    ## Error in df_four_field_kono(): could not find function "df_four_field_kono"
+
+
