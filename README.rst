@@ -55,25 +55,13 @@ This package comes with a few functions that return tibbles representing the sta
     
 
     library("tradgames")
-
-
-::
-
-    ## Error in library("tradgames"): there is no package called 'tradgames'
-
-
-.. sourcecode:: r
-    
-
     library("piecepackr")
     pmap_piece(df_breakthrough(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
 
+.. figure:: man/figures/README-breakthrough-1.png
+    :alt: Starting position for Dan Troyka's abstract game "Breakthrough"
 
-::
-
-    ## Error in df_breakthrough(): could not find function "df_breakthrough"
-
-
+    Starting position for Dan Troyka's abstract game "Breakthrough"
 
 
 .. sourcecode:: r
@@ -81,12 +69,10 @@ This package comes with a few functions that return tibbles representing the sta
 
     pmap_piece(df_turkish_draughts(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
 
+.. figure:: man/figures/README-turkish_draughts-1.png
+    :alt: Starting position for Turkish Draughts
 
-::
-
-    ## Error in df_turkish_draughts(): could not find function "df_turkish_draughts"
-
-
+    Starting position for Turkish Draughts
 
 
 .. sourcecode:: r
@@ -97,6 +83,15 @@ This package comes with a few functions that return tibbles representing the sta
 
 ::
 
-    ## Error in df_four_field_kono(): could not find function "df_four_field_kono"
+    ##  ┌─┰─┰─┰─┐
+    ##  │⛂┃⛂┃⛂┃⛂│
+    ##  ┝━╋━╋━╋━┥
+    ##  │⛂┃⛂┃⛂┃⛂│
+    ##  ┝━╋━╋━╋━┥
+    ##  │⛀┃⛀┃⛀┃⛀│
+    ##  ┝━╋━╋━╋━┥
+    ##  │⛀┃⛀┃⛀┃⛀│
+    ##  └─┸─┸─┸─┘
+    ## 
 
 
