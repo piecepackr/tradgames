@@ -30,9 +30,11 @@ NULL
 #' @importFrom rlang .data
 
 adjust_pieces <- function(df, cell_width, system) {
-    mutate(df, cfg = paste0(system, cell_width),
+    df <- mutate(df, cfg = paste0(system, cell_width),
            x = cell_width * .data$x,
            y = cell_width * .data$y)
+    attr(df, "scale_factor") <- cell_width
+    df
 }
 
 #' @rdname df_cc_games
