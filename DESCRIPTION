@@ -2,7 +2,7 @@ Encoding: UTF-8
 Package: tradgames
 Type: Package
 Title: Board Games played with Traditional Game Systems
-Version: 0.1.1
+Version: 0.2.0-1
 Author: Trevor L Davis. 
 Maintainer: Trevor L Davis <trevor.l.davis@gmail.com>
 Description: This is an R package designed to make board game diagrams for games played with Traditional Game Systems.
@@ -12,11 +12,11 @@ BugReports: https://github.com/trevorld/tradgames/issues
 LazyLoad: yes
 Imports:
     dplyr,
+    ppgames (>= 0.6.0-2),
     rlang,
     tibble
 Suggests:
     piecepackr (>= 1.3.0-18),
-    ppgames (>= 0.4.0-6),
     testthat,
     vdiffr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
