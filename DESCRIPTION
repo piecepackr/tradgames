@@ -12,7 +12,7 @@ BugReports: https://github.com/trevorld/tradgames/issues
 LazyLoad: yes
 Imports:
     dplyr,
-    ppgames (>= 0.6.0-2),
+    ppgames (>= 0.6.1),
     rlang,
     tibble
 Suggests:
