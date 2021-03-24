@@ -1,4 +1,4 @@
-tradgames 0.2.0
+tradgames 0.2.1
 ===============
 
 * Game start arrangement functions:
