@@ -2,11 +2,10 @@ Encoding: UTF-8
 Package: tradgames
 Type: Package
 Title: Board Games played with Traditional Game Systems
-Version: 0.2.2-1
+Version: 0.2.2-2
 Authors@R: c(person("Trevor L", "Davis", role=c("aut", "cre"), 
              email="trevor.l.davis@gmail.com",
              comment = c(ORCID = "0000-0001-6341-4639")))
-Maintainer: Trevor L Davis <trevor.l.davis@gmail.com>
 Description: This is an R package designed to make board game diagrams for games played with Traditional Game Systems.
 License: CC BY-SA 4.0
 URL: https://github.com/trevorld/tradgames
