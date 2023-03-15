@@ -1,16 +1,12 @@
 tradgames: Board game graphics for traditional game systems
 ============================================================
 
-.. image:: https://travis-ci.org/piecepackr/tradgames.png?branch=master
-    :target: https://travis-ci.org/piecepackr/tradgames
-    :alt: Build Status
+.. image:: https://github.com/piecepackr/tradgames/actions/workflows/R-CMD-check.yaml/badge.svg
+    :target: https://github.com/piecepackr/tradgames/actions/workflows/R-CMD-check.yaml
+    :alt: R-CMD-check
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/piecepackr/tradgames?branch=master&svg=true 
-    :target: https://ci.appveyor.com/project/piecepackr/tradgames
-    :alt: AppVeyor Build Status
-
-.. image:: https://img.shields.io/codecov/c/github/piecepackr/tradgames/master.svg
-    :target: https://codecov.io/github/piecepackr/tradgames?branch=master
+.. image:: https://codecov.io/github/piecepackr/tradgames/branch/master/graph/badge.svg)
+    :target: https://app.codecov.io/github/piecepackr/tradgames?branch=master
     :alt: Coverage Status
 
 .. image:: http://www.repostatus.org/badges/latest/wip.svg
