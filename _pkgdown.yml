@@ -1,4 +1,4 @@
-destination: "/home/trevorld/a/projects/websites/R/tradgames/"
+destination: "../../websites/R/tradgames/"
 url: "https://trevorldavis.com/R/tradgames"
 development:
     mode: auto
