@@ -1,3 +1,8 @@
+tradgames 0.3.0
+===============
+
+* `{tradgames}` is now superseded by `{ppdf}`: https://github.com/piecepackr/ppdf
+
 tradgames 0.2.1
 ===============
 

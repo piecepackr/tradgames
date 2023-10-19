@@ -9,55 +9,8 @@ tradgames: Board game graphics for traditional game systems
     :target: https://app.codecov.io/github/piecepackr/tradgames?branch=master
     :alt: Coverage Status
 
-.. image:: http://www.repostatus.org/badges/latest/wip.svg
-   :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
-   :target: http://www.repostatus.org/#wip
+.. image:: https://www.repostatus.org/badges/latest/abandoned.svg
+   :alt: Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.
+   :target: https://www.repostatus.org/#abandoned
 
-
-.. _piecepack: http://www.ludism.org/ppwiki/HomePage
-.. _piecepackr: https://github.com/piecepackr/piecepackr
-.. _R: https://www.r-project.org/
-
-``tradgames`` is an R_ package with functions that help generate board game graphics for games played with traditional board game components.  Right now it has a few functions that return the setups for some games that can be drawn with piecepackr_'s ``pmap_piece`` function.
-
-.. contents::
-
-.. {r setup, echo = FALSE}
-knitr::opts_chunk$set(fig.path = "man/figures/README-")
-.. ..
-
-Installation
-------------
-
-To install the ``tradgames`` R package use the following commands in R_:
-
-.. code:: r
-
-   install.packages("remotes")
-   remotes::install_github("piecepackr/piecepackr") # recommended
-   remotes::install_github("piecepackr/ppgames") # recommended
-   remotes::install_github("piecepackr/tradgames")
-
-License
--------
-
-Unless otherwise specified everything in this repo is licensed under the `CC BY-SA 4.0 license <https://creativecommons.org/licenses/by-sa/4.0/>`_.
-
-Starting Boards
----------------
-
-This package comes with a few functions that return tibbles representing the starting board arrangement for games played with traditional board game components.  These can be visualized with ``piecepackr::pmap_piece`` or ``ppgames::cat_piece``.
-
-.. {r breakthrough, fig.width=9, fig.height=9, fig.cap='Starting position for Dan Troyka\'s abstract game "Breakthrough"'}
-library("tradgames")
-library("piecepackr")
-pmap_piece(df_breakthrough(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
-.. ..
-
-.. {r turkish_draughts, fig.width=9, fig.height=9, fig.cap='Starting position for Turkish Draughts'}
-pmap_piece(df_turkish_draughts(), envir=game_systems(), default.units="in", trans=op_transform, op_scale=0.5)
-.. ..
-
-.. {r four_field_kono}
-ppgames::cat_piece(df_four_field_kono())
-.. ..
+``{tradgames}`` has been superseded by `{ppdf} <https://github.com/piecepackr/ppdf>`_.

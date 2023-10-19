@@ -2,7 +2,7 @@ Encoding: UTF-8
 Package: tradgames
 Type: Package
 Title: Board Games played with Traditional Game Systems
-Version: 0.2.2-3
+Version: 0.3.0-0
 Authors@R: c(person("Trevor L", "Davis", role=c("aut", "cre"), 
              email="trevor.l.davis@gmail.com",
              comment = c(ORCID = "0000-0001-6341-4639")))
@@ -22,4 +22,4 @@ Suggests:
     vdiffr
 Remotes:
     piecepackr/ppgames
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
